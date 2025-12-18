@@ -23,7 +23,7 @@ public class Problema03 {
         for (int f = 0; f < sensores.length; f++) {
             int suma = 0;
             for (int c = 0; c < sensores[f].length; c++) {
-                if (sensores[f][c] == true) {
+                if (sensores[f][c] == false) {
                     suma += 1;
                 }
             }
@@ -33,7 +33,7 @@ public class Problema03 {
             if (zona[f] != 0) {
                 report += String.format("la zona %s tine %s fallas\n", f + 1, zona[f]);
             } else {
-                report += String.format("la zona %s no tiene fallas\n", f+1);
+                report += String.format("la zona %s no tiene fallas\n", f + 1);
             }
         }
         System.out.println(report);
