@@ -33,14 +33,21 @@ public class Problema04 {
         }
         System.out.println("La matriz A tiene los valores");
         for (int f = 0; f < matA.length; f++) {
-            System.out.printf("%s\t%s\n", matA[f][0], matA[f][1]);
+            for (int c = 0; c < matB[f].length; c++) {
 
+                System.out.printf("%s\t%s\n", matA[f][0], matA[f][1]);
+            }
+            System.out.println("");
         }
         System.out.println("La matriz B tiene los valores");
-        for (int f = 0; f < matB.length; f++) {
-            System.out.printf("%s\t%s\n", matB[f][0], matB[f][1]);
 
+        for (int f = 0; f < matB.length; f++) {
+            for (int c = 0; c < matB[f].length; c++) {
+                System.out.printf("%s\t", matB[f][c]);
+            }
+            System.out.println("");
         }
+
         for (int f = 0; f < matB.length; f++) {
             for (int c = 0; c < matB[f].length; c++) {
                 if (matB[f][c] > matA[f][c]) {
